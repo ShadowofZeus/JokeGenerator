@@ -8,8 +8,18 @@ const displayJoke = ((data) => {
 
   //update the browser
   jokeArea.innerHTML = `
-    <h3>Joke for Sue:</h3>
-    <p class="text-center">${joke}</p
+    <div class="card text-center">
+      <div class="card-header bg-light">
+         Joke Generator
+      </div>
+      <div class="card-body bg-info text-white">
+        <h5 class="card-title">Joke of the moment</h5>
+        <p class="card-text">${joke}</p>
+      </div>
+      <div class="card-footer text-muted bg-light">
+        And Sue Laughed.....lol
+      </div>
+    </div>
     `;
 
     //Make the div visible
