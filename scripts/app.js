@@ -32,7 +32,11 @@ const displayJoke = ((data) => {
 button.addEventListener('click', e => {
 
   getJoke()
-    .then((data) => {displayJoke(data)});
+    .then((data) => {
+      displayJoke(data)
+      //Scroll to the bottom of the page so that the joke is visible when button is clicked
+      window.scrollTo(0, document.body.scrollHeight);
+    });
 
 });
 
